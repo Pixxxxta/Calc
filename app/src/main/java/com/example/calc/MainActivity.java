@@ -2,6 +2,7 @@ package com.example.calc;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -40,6 +41,12 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onDelClick(View view) {
         numberField.setText("");
+
+
+    }
+    public void onMenuClick(View view) {
+        Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
 
     }
     public void onAnsClick(View view) {
